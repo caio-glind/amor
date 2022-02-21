@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Feliz aniversario </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url("https://i.pinimg.com/originals/f2/44/79/f24479553e8919bb806886e7454de13f.gif");
+     background-repeat: no-repeat;
+    min-height:100vh;  
+    color: #fff;
+}
+.container
+{
+    width: 1100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0,2);/*da o feito de trasparemcia na caixa */
+overflow: hidden;
+
+}
+/*------coisainha--------------------------------------------------*/
+.auto-input{
+    color: #fff;
+}
+.t{
+    position: absolute;
+    top: 45ch;
+    left: 40%;
+
+}
+.cora{
+    transition: 5s;
+    animation: cora 4s  infinite;
+}
+.cora h5{
+position: absolute;
+top: 10ch;
+}
+
+
+.container .card p{
+    position: absolute;
+    top: 15ch;
+    
+    text-align: center;
+    line-height:2.5;
+
+}
+
+.container .card .conte
+{
+    padding: 30px;
+    text-align: center;
+}
+.container .card .conte h2
+{
+    position: absolute;
+    right: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #1779ff;
+    z-index:1;
+    opacity: 0.1;/*efeito de traspareemcia do numero */
+    transition: 0.5s;
+}
+
+
+
+
+.container .card .conte a 
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #0c002b;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container .card span
+{
+    transition: 0.5;
+    opacity: 0;
+}
+.container .card span
+{
+    transition: 0.5;
+    opacity: 1;
+}
+.container .card span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,transparent,#f15);
+    animation: anima1 2s linear infinite;
+}
+@keyframes anima1
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform:translateX(100%)
+    }
+}
+@keyframes cora
+{
+    0%
+    {
+        font-size: 35px;
+    }50%{
+        font-size: 65px;
+    }
+    100%
+    {
+        font-size: 35px;
+    }
+}
+.container .card span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:3px;
+    height:100%;
+    background: linear-gradient(to bottom,transparent,#f15);
+    animation: anima2 2s linear infinite;
+animation-delay: 1s;
+}
+@keyframes anima2
+{
+    0%
+    {
+        transform: translatey(-100%);
+    }
+    100%
+    {
+        transform:translatey(100%)
+    }
+}
+.container .card span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left,transparent,#f15);
+    animation: anima3 2s linear infinite;
+}
+@keyframes anima3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform:translateX(-100%)
+    }
+}
+.container .card span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,#f15);
+    animation: anima4 2s linear infinite;
+}
+@keyframes anima4
+{
+    0%
+    {
+        transform: translatey(100%);
+    }
+    100%
+    {
+        transform:translatey(-100%)
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+       <!--MODOLO  01-->
+        <div class="card" id="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="conte" id="conte">
+                <br>
+                <h1 class="auto-input"></h1>
+                <p>Feliz aniversario pra coisinha mais fofa desse mundo
+                        Que você tenha muitos anos de vida cosia fofa, que todos os seu sonhos
+                        venha a se realizar.Bem-vinda a mais uma faze da sua vida!
+                    </p> <div class="t"><h5 class="cora">❤️</h5></div>
+               
+            </div>
+         </div>
+        
+         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+         
+         var typed = new Typed(".auto-input",{
+                strings:[" Feliz Aniversário","Rafaela"],
+                typeSpeed:100,
+                backSpeed:100,
+                loop:true
+            })
+</script>        
+</body>
+</html>
+
