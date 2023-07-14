@@ -11,7 +11,7 @@ console.log(maximo);
 //craia o objeto que vai ficra com a lista das musicas e tambem com a pasta
 const songListe = [
     {
-        path: "../music/amor.mp3",
+        path: "./music/amor.mp3",
         songName: "Nossa musica",
         img: "https://i.pinimg.com/originals/23/68/d8/2368d840975d76d7e519ee57b5fb6ed4.gif"
     }
